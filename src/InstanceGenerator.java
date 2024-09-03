@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class InstanceGenerator {
 
@@ -33,7 +36,7 @@ public class InstanceGenerator {
         return false;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner scanner  = new Scanner(System.in);
         System.out.println("Informe a quantidade de vértices e arestas de um grafo qualquer, sem peso e não-orientado:");
@@ -41,11 +44,16 @@ public class InstanceGenerator {
         int edges = scanner.nextInt();
         scanner.close();
 
+
+        BufferedWriter writer = new BufferedWriter(new FileWriter("graph.txt"));
+
         List<int[]> graph = generateGraph(vertices, edges);
 
         System.out.println("Grafo " + vertices + "x" + edges);
         for (int[] edge : graph) {
-            System.out.println(edge[0] + " " + edge[1]);
+            writer.write(edge[0] + ", " + edge[1]);
+            writer.newLine();
         }
+        writer.close();
     }
 }
