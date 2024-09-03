@@ -1,3 +1,8 @@
+## Para rodar o código:
+```bash
+make run
+```
+
 ## O problema
 
 Dado um grafo G = (V, E), determinar o maior subconjunto de aresta, E′ ⊆ E,
