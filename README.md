@@ -42,3 +42,14 @@ https://visualgo.net/en/matching?slide=1
 #### Algoritmo que resolve o problema e sua implementação:
 https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/
 https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/
+
+
+
+#### Para nosso caso específico
+https://en.wikipedia.org/wiki/Maximum_cardinality_matching#:~:text=for%20bipartite%20graphs-,Flow%2Dbased%20algorithm,of%201%20to%20each%20edge
+
+https://en.wikipedia.org/wiki/Blossom_algorithm
+
+https://depth-first.com/articles/2019/04/02/the-maximum-matching-problem/#:~:text=Blossoms,published%20by%20Micali%20and%20Variani.
+
+https://en.wikipedia.org/wiki/Maximum_cardinality_matching#:~:text=for%20bipartite%20graphs-,Flow%2Dbased%20algorithm,of%201%20to%20each%20edge.
