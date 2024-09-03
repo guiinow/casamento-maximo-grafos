@@ -1,10 +1,10 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class InstanceGenerator {
 
@@ -51,7 +51,7 @@ public class InstanceGenerator {
 
         System.out.println("Grafo " + vertices + "x" + edges);
         for (int[] edge : graph) {
-            writer.write(edge[0] + ", " + edge[1]);
+            writer.write(edge[0] + " " + edge[1]);
             writer.newLine();
         }
         writer.close();
