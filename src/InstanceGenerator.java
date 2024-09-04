@@ -40,10 +40,10 @@ public class InstanceGenerator {
         String directory = "testGraphs";
         new java.io.File(directory).mkdirs();
         
-        for (int i = 0; i < 15; i++) {
-            int vertices = (int) Math.pow(2, random.nextInt(14 - 10 + 1) + 10); //número entre 10 e 14
-            int edges = (int) Math.pow(2, random.nextInt(14 - 10 + 1) + 10); //número entre 10 e 14
-            
+        for (int i = 0; i < 50; i++) {
+
+            int vertices = random.nextInt(0, 20000);
+            int edges = random.nextInt(0, 20000);
             int maxEdges = vertices * (vertices - 1) / 2;
             if (edges > maxEdges) {
                 edges = maxEdges;

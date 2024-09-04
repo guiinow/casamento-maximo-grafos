@@ -1,60 +1,200 @@
-Grafo 4096x1024
-Grafo 4096x8192
-Grafo 4096x4096
-Grafo 2048x1024
-Grafo 4096x4096
-Grafo 8192x8192
-Grafo 16384x8192
-Grafo 8192x16384
-Grafo 1024x1024
-Grafo 8192x8192
-Grafo 16384x2048
-Grafo 2048x1024
-Grafo 16384x2048
-Grafo 8192x16384
-Grafo 1024x2048
-Graph 1: Maximum matching = 1432
-Total time in milliseconds: 59ms
-Total time in seconds: 0s
-Graph 2: Maximum matching = 4002
-Total time in milliseconds: 2116ms
+Grafo 14685x16261
+Grafo 4511x13785
+Grafo 10590x18489
+Grafo 18963x19023
+Grafo 6625x16575
+Grafo 3504x16670
+Grafo 16287x13586
+Grafo 692x9803
+Grafo 12645x14282
+Grafo 9961x11262
+Grafo 3045x17350
+Grafo 3894x2509
+Grafo 9494x4363
+Grafo 13122x2547
+Grafo 12201x15430
+Grafo 19270x12927
+Grafo 10377x9997
+Grafo 2510x1417
+Grafo 12974x16516
+Grafo 620x17727
+Grafo 6494x1372
+Grafo 4088x11710
+Grafo 2304x4757
+Grafo 9416x10108
+Grafo 7839x10308
+Grafo 11368x17346
+Grafo 10743x17872
+Grafo 19639x6104
+Grafo 4543x18903
+Grafo 3582x12920
+Grafo 12018x7629
+Grafo 9485x1124
+Grafo 9212x8804
+Grafo 7507x19475
+Grafo 8574x10247
+Grafo 2489x9158
+Grafo 18494x3296
+Grafo 9980x8313
+Grafo 6639x11418
+Grafo 15142x9205
+Grafo 17976x14880
+Grafo 6888x15683
+Grafo 8451x19460
+Grafo 12118x12315
+Grafo 13956x19804
+Grafo 7999x8026
+Grafo 17476x14919
+Grafo 10183x17394
+Grafo 8201x12014
+Grafo 2498x13435
+Graph 1: Maximum matching = 12056
+Total time in milliseconds: 2648ms
 Total time in seconds: 2s
-Graph 3: Maximum matching = 3162
-Total time in milliseconds: 94ms
+Graph 2: Maximum matching = 4501
+Total time in milliseconds: 3529ms
+Total time in seconds: 3s
+Graph 3: Maximum matching = 10163
+Total time in milliseconds: 31583ms
+Total time in seconds: 31s
+Graph 4: Maximum matching = 14918
+Total time in milliseconds: 1889ms
+Total time in seconds: 1s
+Graph 5: Maximum matching = 6573
+Total time in milliseconds: 9671ms
+Total time in seconds: 9s
+Graph 6: Maximum matching = 3504
+Total time in milliseconds: 3034ms
+Total time in seconds: 3s
+Graph 7: Maximum matching = 11676
+Total time in milliseconds: 769ms
 Total time in seconds: 0s
-Graph 4: Maximum matching = 1116
-Total time in milliseconds: 15ms
+Graph 8: Maximum matching = 692
+Total time in milliseconds: 92ms
 Total time in seconds: 0s
-Graph 5: Maximum matching = 3198
-Total time in milliseconds: 74ms
+Graph 9: Maximum matching = 10498
+Total time in milliseconds: 3617ms
+Total time in seconds: 3s
+Graph 10: Maximum matching = 8290
+Total time in milliseconds: 1403ms
+Total time in seconds: 1s
+Graph 11: Maximum matching = 3045
+Total time in milliseconds: 2917ms
+Total time in seconds: 2s
+Graph 12: Maximum matching = 2426
+Total time in milliseconds: 49ms
 Total time in seconds: 0s
-Graph 6: Maximum matching = 6402
-Total time in milliseconds: 340ms
+Graph 13: Maximum matching = 4880
+Total time in milliseconds: 177ms
 Total time in seconds: 0s
-Graph 7: Maximum matching = 8892
-Total time in milliseconds: 496ms
+Graph 14: Maximum matching = 3796
+Total time in milliseconds: 411ms
 Total time in seconds: 0s
-Graph 8: Maximum matching = 8026
-Total time in milliseconds: 14917ms
-Total time in seconds: 14s
-Graph 9: Maximum matching = 777
-Total time in milliseconds: 5ms
+Graph 15: Maximum matching = 10666
+Total time in milliseconds: 16931ms
+Total time in seconds: 16s
+Graph 16: Maximum matching = 12384
+Total time in milliseconds: 771ms
 Total time in seconds: 0s
-Graph 10: Maximum matching = 6456
-Total time in milliseconds: 286ms
+Graph 17: Maximum matching = 7998
+Total time in milliseconds: 601ms
 Total time in seconds: 0s
-Graph 11: Maximum matching = 3288
-Total time in milliseconds: 587ms
+Graph 18: Maximum matching = 1468
+Total time in milliseconds: 12ms
 Total time in seconds: 0s
-Graph 12: Maximum matching = 1108
-Total time in milliseconds: 8ms
+Graph 19: Maximum matching = 11262
+Total time in milliseconds: 16228ms
+Total time in seconds: 16s
+Graph 20: Maximum matching = 620
+Total time in milliseconds: 101ms
 Total time in seconds: 0s
-Graph 13: Maximum matching = 3260
-Total time in milliseconds: 461ms
+Graph 21: Maximum matching = 2026
+Total time in milliseconds: 57ms
 Total time in seconds: 0s
-Graph 14: Maximum matching = 7990
-Total time in milliseconds: 15143ms
+Graph 22: Maximum matching = 4063
+Total time in milliseconds: 3066ms
+Total time in seconds: 3s
+Graph 23: Maximum matching = 2261
+Total time in milliseconds: 547ms
+Total time in seconds: 0s
+Graph 24: Maximum matching = 7617
+Total time in milliseconds: 972ms
+Total time in seconds: 0s
+Graph 25: Maximum matching = 6999
+Total time in milliseconds: 6437ms
+Total time in seconds: 6s
+Graph 26: Maximum matching = 10573
+Total time in milliseconds: 33517ms
+Total time in seconds: 33s
+Graph 27: Maximum matching = 10228
+Total time in milliseconds: 30009ms
+Total time in seconds: 30s
+Graph 28: Maximum matching = 7886
+Total time in milliseconds: 737ms
+Total time in seconds: 0s
+Graph 29: Maximum matching = 4542
+Total time in milliseconds: 4821ms
+Total time in seconds: 4s
+Graph 30: Maximum matching = 3578
+Total time in milliseconds: 1974ms
+Total time in seconds: 1s
+Graph 31: Maximum matching = 7444
+Total time in milliseconds: 236ms
+Total time in seconds: 0s
+Graph 32: Maximum matching = 1828
+Total time in milliseconds: 149ms
+Total time in seconds: 0s
+Graph 33: Maximum matching = 7108
+Total time in milliseconds: 350ms
+Total time in seconds: 0s
+Graph 34: Maximum matching = 7465
+Total time in milliseconds: 12311ms
+Total time in seconds: 12s
+Graph 35: Maximum matching = 7331
+Total time in milliseconds: 2618ms
+Total time in seconds: 2s
+Graph 36: Maximum matching = 2486
+Total time in milliseconds: 786ms
+Total time in seconds: 0s
+Graph 37: Maximum matching = 4958
+Total time in milliseconds: 572ms
+Total time in seconds: 0s
+Graph 38: Maximum matching = 7206
+Total time in milliseconds: 298ms
+Total time in seconds: 0s
+Graph 39: Maximum matching = 6373
+Total time in milliseconds: 7593ms
+Total time in seconds: 7s
+Graph 40: Maximum matching = 9184
+Total time in milliseconds: 447ms
+Total time in seconds: 0s
+Graph 41: Maximum matching = 12824
+Total time in milliseconds: 856ms
+Total time in seconds: 0s
+Graph 42: Maximum matching = 6805
+Total time in milliseconds: 9011ms
+Total time in seconds: 9s
+Graph 43: Maximum matching = 8364
+Total time in milliseconds: 15603ms
 Total time in seconds: 15s
-Graph 15: Maximum matching = 999
-Total time in milliseconds: 69ms
+Graph 44: Maximum matching = 9590
+Total time in milliseconds: 765ms
 Total time in seconds: 0s
+Graph 45: Maximum matching = 12729
+Total time in milliseconds: 41982ms
+Total time in seconds: 41s
+Graph 46: Maximum matching = 6263
+Total time in milliseconds: 317ms
+Total time in seconds: 0s
+Graph 47: Maximum matching = 12756
+Total time in milliseconds: 837ms
+Total time in seconds: 0s
+Graph 48: Maximum matching = 9778
+Total time in milliseconds: 22359ms
+Total time in seconds: 22s
+Graph 49: Maximum matching = 7533
+Total time in milliseconds: 10602ms
+Total time in seconds: 10s
+Graph 50: Maximum matching = 2498
+Total time in milliseconds: 1312ms
+Total time in seconds: 1s

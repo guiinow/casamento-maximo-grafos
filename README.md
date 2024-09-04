@@ -41,4 +41,11 @@ Faixa de tamanho de vértices e arestas nos grafos gerados: 2^14.
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 ![alt text](grafico.png)
-Gráfico mostrando a relação entre o tamanho do grafo e o tempo de execução em escala logarítmica, com os pontos ordenados de forma monótona pelo tamanho do grafo. 
+Gráfico com 15 grafos mostrando a relação entre o tamanho do grafo e o tempo de execução em escala logarítmica, com os pontos ordenados de forma monótona pelo tamanho do grafo. Intervalo entre 10 e 15.
+
+Com 50 grafos:
+![alt text](image-1.png)
+Intervalo entre 10 e 15
+
+Com 50 grafos, intervalo de 0 a 20000 vértices e arestas:
+![alt text](image-2.png)

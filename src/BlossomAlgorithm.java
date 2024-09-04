@@ -12,7 +12,7 @@ public class BlossomAlgorithm {
     public static void main(String[] args) {
         String directory = "testGraphs";
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 50; i++) {
 
             String graphFilePath = directory + "/graph" + (i + 1) + ".txt";
             int[][] graph = readGraphFromFile(graphFilePath);
