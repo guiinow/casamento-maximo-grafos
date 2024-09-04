@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
 
 public class InstanceGenerator {
 
@@ -35,25 +34,38 @@ public class InstanceGenerator {
         }
         return false;
     }
-
     public static void main(String[] args) throws IOException {
+        Random random = new Random();
+        
+        String directory = "testGraphs";
+        new java.io.File(directory).mkdirs();
+        
+        for (int i = 0; i < 15; i++) {
+            int vertices = (int) Math.pow(2, random.nextInt(15));
+            int edges = (int) Math.pow(2, random.nextInt(15));
+            
+            int maxEdges = vertices * (vertices - 1) / 2;
+            if (edges > maxEdges) {
+                edges = maxEdges;
+            }
 
-        Scanner scanner  = new Scanner(System.in);
-        System.out.println("Informe a quantidade de vértices e arestas de um grafo qualquer, sem peso e não-orientado:");
-        int vertices = scanner.nextInt();
-        int edges = scanner.nextInt();
-        scanner.close();
-
-
-        BufferedWriter writer = new BufferedWriter(new FileWriter("graph.txt"));
-
-        List<int[]> graph = generateGraph(vertices, edges);
-
-        System.out.println("Grafo " + vertices + "x" + edges);
-        for (int[] edge : graph) {
-            writer.write(edge[0] + " " + edge[1]);
-            writer.newLine();
+            System.out.println("Grafo " + vertices + "x" + edges);
+            
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(directory + "/graph" + (i + 1) + ".txt"))) {
+                List<int[]> graph = generateGraph(vertices, edges);
+                
+                for (int[] edge : graph) {
+                    writer.write(edge[0] + " " + edge[1]);
+                    writer.newLine();
+                }
+            } catch (IOException e) {
+                e.getMessage();     
+            }
+            
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("results.txt", true))) {
+                writer.write("Grafo " + vertices + "x" + edges);
+                writer.newLine();
+            }
         }
-        writer.close();
     }
 }

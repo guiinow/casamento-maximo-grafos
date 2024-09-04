@@ -1,0 +1,15 @@
+Grafo 512x1
+Grafo 128x128
+Grafo 8192x64
+Grafo 2x1
+Grafo 32x2
+Grafo 16384x8192
+Grafo 4096x64
+Grafo 16x120
+Grafo 4x6
+Grafo 8192x16384
+Grafo 512x8
+Grafo 32x128
+Grafo 128x2048
+Grafo 1x0
+Grafo 16384x16

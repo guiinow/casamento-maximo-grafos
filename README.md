@@ -33,3 +33,7 @@ https://en.wikipedia.org/wiki/Blossom_algorithm
 https://depth-first.com/articles/2019/04/02/the-maximum-matching-problem/#:~:text=Blossoms,published%20by%20Micali%20and%20Variani.
 
 https://en.wikipedia.org/wiki/Maximum_cardinality_matching#:~:text=for%20bipartite%20graphs-,Flow%2Dbased%20algorithm,of%201%20to%20each%20edge.
+
+Número máximo de vértices em um grafo não-orientado e sem loops: V(V-1)/2.
+
+Faixa de tamanho de vértices e arestas nos grafos gerados: 2^14.
