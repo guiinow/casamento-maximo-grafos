@@ -1,5 +1,7 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,10 +10,34 @@ import java.util.List;
 public class BlossomAlgorithm {
 
     public static void main(String[] args) {
-        int[][] graph = readGraphFromFile("graph.txt");
+        String directory = "testGraphs";
 
-        BlossomAlgorithm ba = new BlossomAlgorithm();
-        System.out.println("Maximum matching: " + ba.maxMatching(graph));
+        for (int i = 0; i < 15; i++) {
+
+            String graphFilePath = directory + "/graph" + (i + 1) + ".txt";
+            int[][] graph = readGraphFromFile(graphFilePath);
+
+            long initialTime = System.currentTimeMillis();
+            BlossomAlgorithm ba = new BlossomAlgorithm();
+            int maxMatching = ba.maxMatching(graph);
+            long finalTime = System.currentTimeMillis();
+
+            long totalTimeInMS = finalTime - initialTime;
+            System.out.println("Total time in milliseconds: " + totalTimeInMS + "ms");
+            System.out.println("Total time in seconds: " + totalTimeInMS / 1000 + "s");
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("results.txt", true))) {
+                writer.write("Graph " + (i + 1) + ": Maximum matching = " + maxMatching);
+                writer.newLine();
+                writer.write("Total time in milliseconds: " + totalTimeInMS + "ms");
+                writer.newLine();
+                writer.write("Total time in seconds: " + totalTimeInMS / 1000 + "s");
+                writer.newLine();
+            } catch (IOException e) {
+                e.getMessage();
+            }
+        }
+    
     }
 
     public static int[][] readGraphFromFile(String filename) {

@@ -13,3 +13,48 @@ Grafo 32x128
 Grafo 128x2048
 Grafo 1x0
 Grafo 16384x16
+Graph 1: Maximum matching = 2
+Total time in milliseconds: 2ms
+Total time in seconds: 0s
+Graph 2: Maximum matching = 98
+Total time in milliseconds: 1ms
+Total time in seconds: 0s
+Graph 3: Maximum matching = 126
+Total time in milliseconds: 161ms
+Total time in seconds: 0s
+Graph 4: Maximum matching = 2
+Total time in milliseconds: 0ms
+Total time in seconds: 0s
+Graph 5: Maximum matching = 2
+Total time in milliseconds: 0ms
+Total time in seconds: 0s
+Graph 6: Maximum matching = 8846
+Total time in milliseconds: 606ms
+Total time in seconds: 0s
+Graph 7: Maximum matching = 124
+Total time in milliseconds: 46ms
+Total time in seconds: 0s
+Graph 8: Maximum matching = 16
+Total time in milliseconds: 0ms
+Total time in seconds: 0s
+Graph 9: Maximum matching = 4
+Total time in milliseconds: 0ms
+Total time in seconds: 0s
+Graph 10: Maximum matching = 7998
+Total time in milliseconds: 14525ms
+Total time in seconds: 14s
+Graph 11: Maximum matching = 16
+Total time in milliseconds: 1ms
+Total time in seconds: 0s
+Graph 12: Maximum matching = 32
+Total time in milliseconds: 0ms
+Total time in seconds: 0s
+Graph 13: Maximum matching = 128
+Total time in milliseconds: 2ms
+Total time in seconds: 0s
+Graph 14: Maximum matching = 0
+Total time in milliseconds: 0ms
+Total time in seconds: 0s
+Graph 15: Maximum matching = 32
+Total time in milliseconds: 593ms
+Total time in seconds: 0s
