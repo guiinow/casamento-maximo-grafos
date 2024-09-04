@@ -37,3 +37,8 @@ https://en.wikipedia.org/wiki/Maximum_cardinality_matching#:~:text=for%20biparti
 Número máximo de vértices em um grafo não-orientado e sem loops: V(V-1)/2.
 
 Faixa de tamanho de vértices e arestas nos grafos gerados: 2^14.
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+
+![alt text](grafico.png)
+Gráfico mostrando a relação entre o tamanho do grafo e o tempo de execução em escala logarítmica, com os pontos ordenados de forma monótona pelo tamanho do grafo. 

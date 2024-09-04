@@ -41,8 +41,8 @@ public class InstanceGenerator {
         new java.io.File(directory).mkdirs();
         
         for (int i = 0; i < 15; i++) {
-            int vertices = (int) Math.pow(2, random.nextInt(15));
-            int edges = (int) Math.pow(2, random.nextInt(15));
+            int vertices = (int) Math.pow(2, random.nextInt(14 - 10 + 1) + 10); //número entre 10 e 14
+            int edges = (int) Math.pow(2, random.nextInt(14 - 10 + 1) + 10); //número entre 10 e 14
             
             int maxEdges = vertices * (vertices - 1) / 2;
             if (edges > maxEdges) {
