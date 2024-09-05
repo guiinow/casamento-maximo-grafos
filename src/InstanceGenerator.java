@@ -40,7 +40,7 @@ public class InstanceGenerator {
         String directory = "testGraphs";
         new java.io.File(directory).mkdirs();
         
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < 5; i++) {
 
             int vertices = random.nextInt(0, 20000);
             int edges = random.nextInt(0, 20000);
