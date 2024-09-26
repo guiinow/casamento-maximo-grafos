@@ -1,3 +1,5 @@
+// Autores: Guilherme Ferreira 19.2.8981 | Vinicius Niquini 21.1.8008
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -35,12 +37,13 @@ public class InstanceGenerator {
         return false;
     }
     public static void main(String[] args) throws IOException {
+        int instances = 200;
         Random random = new Random();
         
         String directory = "testGraphs";
         new java.io.File(directory).mkdirs();
         
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < instances; i++) {
 
             int vertices = random.nextInt(0, 20000);
             int edges = random.nextInt(0, 20000);
@@ -49,7 +52,7 @@ public class InstanceGenerator {
                 edges = maxEdges;
             }
 
-            System.out.println("Grafo " + vertices + "x" + edges);
+            System.out.println("Grafo " + i + ": " + vertices + "x" + edges);
             
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(directory + "/graph" + (i + 1) + ".txt"))) {
                 List<int[]> graph = generateGraph(vertices, edges);
@@ -63,7 +66,12 @@ public class InstanceGenerator {
             }
             
             try (BufferedWriter writer = new BufferedWriter(new FileWriter("results.txt", true))) {
-                writer.write("Grafo " + vertices + "x" + edges);
+                writer.write("Grafo " + i + ": " + vertices + "x" + edges + " | ");
+            }
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("sizes.txt", true))) {
+                String size = Integer.toString(vertices + edges);
+                writer.write(size);
                 writer.newLine();
             }
         }
