@@ -7,7 +7,7 @@ make run
 
 Dado um grafo G = (V, E), determinar o maior subconjunto de aresta, E′ ⊆ E,
 que formam um casamento. Ou seja, nenhum aresta de E′
-compartilham v´ertices
+compartilham vértices
 em comum;
 
 ## Definições
@@ -41,9 +41,9 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 ![alt text](grafico.png)
 Gráfico com 15 grafos mostrando a relação entre o tamanho do grafo e o tempo de execução em escala logarítmica, com os pontos ordenados de forma monótona pelo tamanho do grafo. Intervalo entre 10 e 15.
 
-Com 50 grafos:
+Com 50 grafos:<br>
 ![alt text](image-1.png)
-Intervalo entre 10 e 15
+<br>Intervalo entre 10 e 15
 
 Com 50 grafos, intervalo de 0 a 20000 vértices e arestas:
 ![alt text](image-2.png)
