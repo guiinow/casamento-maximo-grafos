@@ -1,3 +1,5 @@
+# Autores: Guilherme Ferreira 19.2.8981 | Vinicius Niquini 21.1.8008
+
 # Define the Java compiler
 JAVAC=javac
 
