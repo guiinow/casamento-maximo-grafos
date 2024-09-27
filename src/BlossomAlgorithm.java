@@ -40,14 +40,9 @@ public class BlossomAlgorithm {
             y[i] = maxMatching/2;
             z[i] = totalTimeInMS;
 
-            // Essa função retorna uma lista de nós correspondentes, cada nó (índice) tem em sua casa o nó conectado
-            // int[] subGraph = ba.subGraph(graph);             
-            // for (int j=1; j < subGraph.length; j++) {
-            //     if (subGraph[j] > 0) {
-            //         System.out.println(j + " - " + subGraph[j]);
-            //     }
-            // }
-
+            //Essa função escreve em um arquivo uma lista de nós correspondentes, cada nó (índice) tem em sua casa o nó conectado
+            ba.subGraph(graph, i);
+            
             System.out.println("[########## " + (i + 1) + "/" + instances + " ##########]");
             System.out.println("Size: " + x[i]);
             System.out.println("Max: " + y[i]);
@@ -127,16 +122,29 @@ public class BlossomAlgorithm {
         return false;
     }
 
-    public int[] subGraph(int[][] graph) {
+    public void subGraph(int[][] graph , int i) {
         int n = graph.length;
         int[] match = new int[n];
         Arrays.fill(match, -1);
+        String directory = "maxGraphs";
+        new java.io.File(directory).mkdirs();
 
         for (int u = 0; u < n; u++) {
             boolean[] visited = new boolean[n];
             bfs(graph, u, visited, match);
         }
-        return match;
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(directory + "/subGraph"+i+".txt" , true))) {
+            for (int j=1; j < match.length; j++){
+                if (match[j] > 0) {
+                    writer.write(j + " - " + match[j]);
+                    writer.newLine();
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erro ao ler o arquivo: " + e.getMessage());
+            e.printStackTrace();    
+        }
+        
     }
 
     public List<String> getSize() {

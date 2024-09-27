@@ -67,12 +67,16 @@ public class InstanceGenerator {
             
             try (BufferedWriter writer = new BufferedWriter(new FileWriter("results.txt", true))) {
                 writer.write("Grafo " + i + ": " + vertices + "x" + edges + " | ");
+            } catch (IOException e) {
+                e.getMessage();     
             }
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter("sizes.txt", true))) {
                 String size = Integer.toString(vertices + edges);
                 writer.write(size);
                 writer.newLine();
+            } catch (IOException e) {
+                e.getMessage();     
             }
         }
     }
