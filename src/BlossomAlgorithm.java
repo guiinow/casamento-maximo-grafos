@@ -43,9 +43,11 @@ public class BlossomAlgorithm {
             System.out.println("[########## " + (i + 1) + "/" + instances + " ##########]");
             System.out.println("Size: " + x[i]);
             System.out.println("Max: " + y[i]);
-            System.out.println("Time: " + z[i]);
+            System.out.println("Time in ms: " + z[i] + "ms");
+            System.out.println("Time in s: " + z[i]/1000 + "s");
         }
-        System.out.println("Tempo total: " + totalTime);
+        System.out.println("Tempo total em ms: " + totalTime + "ms");
+        System.out.println("Tempo total em s: " + totalTime/1000 + "s");
         System.out.println("Tamanhos: " + Arrays.toString(x));
         System.out.println("Maximos:  " + Arrays.toString(y));
         System.out.println("Tempos:   " + Arrays.toString(z));
@@ -61,7 +63,7 @@ public class BlossomAlgorithm {
                 writer.newLine();
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
-            e.printStackTrace();
+            System.err.println("Error: " + e.getMessage());
         }
     }
 
@@ -114,7 +116,8 @@ public class BlossomAlgorithm {
             }
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
-            e.printStackTrace();    
+            System.err.println("Error: " + e.getMessage());
+
         }
         return result;
     }
@@ -141,7 +144,7 @@ public class BlossomAlgorithm {
             }
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
-            e.printStackTrace();
+            System.err.println("Error: " + e.getMessage());
         }
         return size;
     }
